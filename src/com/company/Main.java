@@ -5,6 +5,6 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
         CreateOrder order1 = new CreateOrder();
-        System.out.println( order1.getDateOfCreateOrder() );
+
     }
 }

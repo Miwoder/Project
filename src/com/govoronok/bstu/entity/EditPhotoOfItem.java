@@ -1,4 +1,4 @@
-package com.BSTU.GovoronokVadim;
+package com.govoronok.bstu.entity;
 
 import lombok.Data;
 

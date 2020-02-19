@@ -1,4 +1,4 @@
-package com.BSTU.GovoronokVadim;
+package com.govoronok.bstu.entity;
 
 import lombok.Data;
 import java.sql.Date;
@@ -19,6 +19,6 @@ public class CreateOrder
     private String itemInfo;
     private boolean checkbox;
     private String ProductQuality;
-    private int sumOfItem;
+    private int sumOfItemPrice;
 
 }

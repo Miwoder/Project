@@ -5,7 +5,7 @@ import lombok.Data;
 import java.sql.Date;
 
 @Data
-public class CreatePhotoList
+public class Photo
 {
     private String nameOfFile;
     private Date dateOfUpload;

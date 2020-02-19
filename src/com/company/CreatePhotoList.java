@@ -2,10 +2,12 @@ package com.company;
 
 import lombok.Data;
 
+import java.sql.Date;
+
 @Data
 public class CreatePhotoList
 {
     private String nameOfFile;
-    private String dateOfUpload;
+    private Date dateOfUpload;
     private String note;
 }

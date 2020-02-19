@@ -1,16 +1,15 @@
 package com.company;
 
 import lombok.Data;
-
-import java.util.Date;
+import java.sql.Date;
 
 @Data
 public class CreateOrder
 {
     private int id;
     private String nameOfGood;
-    private String dateOfCreateOrder;
-    private String dateOfExpectedConfirmOrder;
+    private Date dateOfCreateOrder;
+    private Date dateOfExpectedConfirmOrder;
     private int totalNumberOfGoods;
     private int sumOfOrder;
     private String fullNameOfCustomer;

@@ -2,6 +2,8 @@ package com.company;
 
 import lombok.Data;
 
+import java.sql.Date;
+
 @Data
 public class IssueOrder
 {
@@ -9,5 +11,5 @@ public class IssueOrder
     private String nameOfItem;
     private Object firstPictureOfItem;
     private Object firstPictureOfReceivedItem;
-    private String currentDate;
+    private Date currentDate;
 }

@@ -15,6 +15,7 @@ public class CreateOrder
     private String fullNameOfCustomer;
     private String orderStatus;
 
+    ////////////
     private String itemName;
     private String itemInfo;
     private boolean checkbox;

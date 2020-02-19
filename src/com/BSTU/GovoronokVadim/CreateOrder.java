@@ -1,4 +1,4 @@
-package com.company;
+package com.BSTU.GovoronokVadim;
 
 import lombok.Data;
 import java.sql.Date;

@@ -6,8 +6,8 @@ import lombok.Data;
 public class SearchGood
 {
     private String nameOfGood;
-    private String firstDateOfCreate;
-    private String secondDateOfCreate;
+    private String firstDate;
+    private String secondDate;
     private String nameOfItem;
     private String customerSurname;
 }

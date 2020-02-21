@@ -4,7 +4,7 @@ import lombok.Data;
 import java.sql.Date;
 
 @Data
-public class CreateOrder
+public class Order
 {
     private int id;
     private String nameOfGood;
@@ -14,5 +14,7 @@ public class CreateOrder
     private int sumOfOrder;
     private String fullNameOfCustomer;
     private String orderStatus;
+    private int price;
+
 
 }

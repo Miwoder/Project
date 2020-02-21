@@ -7,7 +7,7 @@ import java.sql.Date;
 @Data
 public class IssueOrder
 {
-    private boolean checkbox;
+
     private String nameOfItem;
     private Object firstPictureOfItem;
     private Object firstPictureOfReceivedItem;

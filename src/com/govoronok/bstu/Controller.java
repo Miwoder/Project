@@ -1,6 +1,5 @@
 package com.govoronok.bstu;
 
-import com.govoronok.bstu.entity.CreateOrder;
 import util.ConnectorDB;
 
 import java.sql.Connection;

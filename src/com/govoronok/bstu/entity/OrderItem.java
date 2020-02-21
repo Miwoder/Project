@@ -3,11 +3,11 @@ package com.govoronok.bstu.entity;
 import lombok.Data;
 
 @Data
-public class itemDetails
+public class OrderItem
 {
     private String itemName;
     private String itemInfo;
-    private boolean checkbox;
+
     private String productQuality;
     private int sumOfItemPrice;
 }

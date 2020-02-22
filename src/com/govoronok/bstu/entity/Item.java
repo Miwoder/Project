@@ -13,7 +13,6 @@ public class Item
     private int yearOfIssueFirst;
     private int yearOfIssueSecond;
     private String itemName;
-
     private String itemInfo;
     private String productQuality;
     private int sumOfItemPrice;

@@ -1,7 +1,7 @@
 package com.govoronok.bstu.entity;
 
 import lombok.Data;
-import java.sql.Date;
+import java.util.Date;
 
 @Data
 public class Order
@@ -10,12 +10,10 @@ public class Order
     private Date dateOfCreateOrder;
     private Date dateOfExpectedConfirmOrder;
 
-    public void setId(int id) throws Exception{
-        Integer itr = null;
-        if (id==itr)
-            throw new Exception("Заполните поле \"ID\" ");
-        this.id = id;
-    }
+    private int totalNumberOfItems;
+    private String fullNameOfCustomer;
+    private int sumOfOrder;
+    private String orderStatus;
 
     public void setDateOfCreateOrder(Date dateOfCreateOrder) throws Exception {
         if (dateOfCreateOrder==null)
@@ -34,12 +32,5 @@ public class Order
             throw new Exception("Количество деталей в заказе не может равняться 0");
         this.totalNumberOfItems = totalNumberOfItems;
     }
-
-    private int totalNumberOfItems;
-    private String fullNameOfCustomer;
-    private int sumOfOrder;
-    private String orderStatus;
-
-
 
 }

@@ -9,10 +9,8 @@ import java.util.Scanner;
 
 public class Manager
 {
-    int id=1;
     Date date = new Date();
     Scanner in = new Scanner(System.in);
-    int sumOfOrder = 0;
 
     public Item CreateItem(Item item) throws Exception
     {
@@ -23,11 +21,11 @@ public class Manager
         item.setProductQuality("new");
         return item;
     }
-    public Order CreateOrder(Order order, ArrayList<Order> orders) throws Exception {
+    public Order CreateOrder(Order order, ArrayList<Order> orders, int ID) throws Exception {
         ReadinessStatus notReady = ReadinessStatus.NotReady;
-
-        order.setId(id);
-        id++;
+        int sumOfOrder = 0;
+        int id = ID;
+        order.setId(id+1);
         order.setDateOfCreateOrder(date);
         //order.setDateOfExpectedConfirmOrder();
         System.out.println("Введите имя заказчика");
@@ -50,14 +48,8 @@ public class Manager
                 "Суммарное число деталей в заказе: " + order.getTotalNumberOfItems() + ", " +
                 "Сумма заказа: " + order.getSumOfOrder() + ", " +
                 "Статус заказа: " + order.getOrderStatus());
-
         return order;
     }
-
-    //public void DeleteOrder(Order order, ArrayList<Order> orders) throws Exception{
-      //  orders.remove(order);
-
-    //}
 
 
 }

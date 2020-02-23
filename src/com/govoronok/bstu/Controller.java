@@ -14,7 +14,7 @@ public class Controller {
     public static void main(String[] args) throws IllegalAccessException, SQLException, InstantiationException
     {
         try {
-            int id = 0;
+            //int id = 0;
             Scanner in = new Scanner(System.in);
           //Connection cn = ConnectorDB.getConnection();
             Manager manager = new Manager();
@@ -31,10 +31,13 @@ public class Controller {
                 switch (num){
                     case 0: return;
                     case 1: {
+                        int id=0;
+                        while (order[id]!=null){
+                            id++;
+                        }
                         order[id] = new Order();
-                        manager.CreateOrder(order[id], orders);
+                        manager.CreateOrder(order[id], orders, id);
                         orders.add(order[id]);
-                        id++;
                         break;
                     }
                     case 2: {
@@ -52,6 +55,7 @@ public class Controller {
                         //для тестов
                         System.out.println(orders.get(showId));
                     }
+
                 }
 
 

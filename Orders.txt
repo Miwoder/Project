@@ -1,1 +1,1 @@
-Order(id=1, dateOfCreateOrder=Sun Feb 23 19:50:13 MSK 2020, dateOfExpectedConfirmOrder=null, totalNumberOfItems=0, fullNameOfCustomer=Oleg, sumOfOrder=0, orderStatus=NotReady)
+Order(id=3, fullNameOfCustomer=автфшщ, customerEmail=null, dateOfCreateOrder=Thu Feb 27 23:04:19 MSK 2020, dateOfExpectedConfirmOrder=null, itemId=0, totalNumberOfItems=0, sumOfOrder=0, orderStatus=NotReady)

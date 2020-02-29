@@ -17,6 +17,7 @@ public class Order
     private Date dateOfCreateOrder;
     private Date dateOfExpectedConfirmOrder;
     private int itemId;
+    private Item itemName;
     private int totalNumberOfItems;
     private int sumOfOrder;
     private String orderStatus;
@@ -39,4 +40,20 @@ public class Order
         this.totalNumberOfItems = totalNumberOfItems;
     }
 
+    private Order(int id, String fullNameOfCustomer, String customerEmail, Date dateOfCreateOrder, Date dateOfExpectedConfirmOrder,
+                 int itemId, int totalNumberOfItems, int sumOfOrder, String orderStatus) {
+        this.id = id;
+        this.fullNameOfCustomer = fullNameOfCustomer;
+        this.customerEmail = customerEmail;
+        this.dateOfCreateOrder = dateOfCreateOrder;
+        this.dateOfExpectedConfirmOrder = dateOfExpectedConfirmOrder;
+        this.itemId = itemId;
+        this.totalNumberOfItems = totalNumberOfItems;
+        this.sumOfOrder = sumOfOrder;
+        this.orderStatus = orderStatus;
+    }
+
+    public Order (Item item){
+        this.itemName = item;
+    }
 }

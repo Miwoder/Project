@@ -11,13 +11,11 @@ public class ConnectorDB
 {
     public static Connection getConnection() throws SQLException, InstantiationException, IllegalAccessException {
 
-        ResourceBundle resource = ResourceBundle.getBundle("db",
-                Locale.getDefault());
+        ResourceBundle resource = ResourceBundle.getBundle("db",Locale.getDefault());
+
         String url = resource.getString("db.url");
         String user = resource.getString("db.user");
         String pass = resource.getString("db.password");
-
-      // LOGGER.info("connection establish");
 
         return DriverManager.getConnection(url, user, pass);
     }

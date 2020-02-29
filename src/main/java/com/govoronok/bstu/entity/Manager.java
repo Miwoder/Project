@@ -21,8 +21,8 @@ public class Manager
         item.setProductQuality("new");
         return item;
     }
-    public Order CreateOrder(Order order, ArrayList<Order> orders, int ID) throws Exception {
-        ReadinessStatus notReady = ReadinessStatus.NotReady;
+    public void CreateOrder() throws Exception {
+        /*ReadinessStatus notReady = ReadinessStatus.NotReady;
         int sumOfOrder = 0;
         int id = ID;
         order.setId(id+1);
@@ -37,7 +37,7 @@ public class Manager
         order.setSumOfOrder(sumOfOrder);
         order.setOrderStatus(notReady.toString());
         orders.add(order);
-        return order;
+        return order;*/
     }
 
     public Order ViewOrder(Order order, ArrayList<Order> orders) throws Exception{

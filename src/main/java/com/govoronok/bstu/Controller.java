@@ -58,10 +58,10 @@ public class Controller {
             objectMapper.registerModule(simpleModule);
 
 
-            objectMapper.writeValue(new File("src/main/resources/data.json"), OrderInfo);;
+            objectMapper.writeValue(new File("src/main/resources/data.json"), orderInfos);;
 
 
-            OrderInfo newOrderInfos = objectMapper.readValue(new File("src/main/resources/data.json"),List.class);
+            OrderInfo newOrderInfos = (OrderInfo) objectMapper.readValue(new File("src/main/resources/data.json"),List.class);
 
 
             OrderInfo neOrder = new OrderInfo("Ivan","Ready");

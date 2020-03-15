@@ -20,8 +20,8 @@ public class SerializerC extends StdSerializer<OrderInfo> {
     @Override
     public void serialize(OrderInfo orderInfo, JsonGenerator jsonGenerator, SerializerProvider serializerProvider) throws IOException {
         jsonGenerator.writeStartObject();
-        jsonGenerator.writeStringField("CustomerName",OrderInfo.getfullNameOfCustomer());
-        jsonGenerator.writeStringField("OrderStatus", OrderInfo.getOrderStatus());
+        jsonGenerator.writeStringField("CustomerName",orderInfo.getFullNameOfCustomer());
+        jsonGenerator.writeStringField("OrderStatus", orderInfo.getOrderStatus());
         jsonGenerator.writeEndObject();
     }
 }

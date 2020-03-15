@@ -49,7 +49,7 @@ public class Controller {
 
             for (OrderInfo orderInfo : orderInfos)
                 System.out.println(String.format("Customer name: %s, order status: %s",
-                        OrderInfo.getFullNameOfCustomer(), OrderInfo.getOrderStatus()));
+                        orderInfo.getFullNameOfCustomer(), orderInfo.getOrderStatus()));
 
             ObjectMapper objectMapper = new ObjectMapper();
             SimpleModule simpleModule = new SimpleModule("SerialDeserial", new Version(1, 0, 0, null, null, null));
@@ -89,7 +89,7 @@ public class Controller {
             outputStream.close();
 
             OrderInfo orderInfo = new OrderInfo("Oleg","Not ready");
-            if (!OrderInfos.contains(orderInfo)) {
+            if (!orderInfos.contains(orderInfo)) {
                 String str = String.format("Not found order with customer name: %s and status %s",
                         orderInfo.getFullNameOfCustomer(), orderInfo.getOrderStatus());
                 log.error(str);

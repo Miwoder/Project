@@ -61,7 +61,7 @@ public class Controller {
             objectMapper.writeValue(new File("src/main/resources/data.json"), orderInfos);;
 
 
-            OrderInfo newOrderInfos = (OrderInfo) objectMapper.readValue(new File("src/main/resources/data.json"),List.class);
+            List<OrderInfo> newOrderInfos = objectMapper.readValue(new File("src/main/resources/data.json"), List.class);
 
 
             OrderInfo neOrder = new OrderInfo("Ivan","Ready");
